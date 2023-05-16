@@ -12,11 +12,18 @@
 
   <title>Frontend Mentor | Advice generator app</title>
 </head>
-<body>
+<body class="bg-[var(--Dark-Blue)] w-screen h-screen flex items-center justify-center">
+  <main class="flex flex-col items-center justify-center w-full max-w-lg m-4 p-8 bg-[var(--Dark-Grayish-Blue)] rounded-lg text-center">
 
-  Advice #<!-- Advice ID goes here -->
+    <span class="text-[var(--Neon-Green)] tracking-[0.4em] uppercase text-xs my-4" id="adviceId">Advice #<span id="id">0</span></span>
+  
+    <strong class="text-xl text-[var(--Light-Cyan)] font-extrabold" id="advice">"Press the button for generate a new advice..."</strong>
 
-  "<!-- Advice text goes here -->"
+    <img class="block sm:hidden my-6" src="./images/pattern-divider-mobile.svg" alt="">          
+    <img class="hidden sm:block my-6 w-full" src="./images/pattern-divider-desktop.svg" alt="">          
 
+    <button class="p-7 bg-[var(--Neon-Green)] bg-[url('./images/icon-dice.svg')] bg-no-repeat bg-center rounded-full -mb-14 hover:cursor-pointer" id="button" onclick="getAdvice()"></button>      
+  </main>
+  <script src="./js/api.js"></script>
 </body>
 </html>
