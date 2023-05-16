@@ -14,8 +14,8 @@
 
   /* ### Neutral */
 
-  --Grayish-Blue: hsl(217, 19%, 38%);
-  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Grayish-Blue: hsl(216, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(219, 19%, 24%);
   --Dark-Blue: hsl(218, 23%, 16%);  
 }
 
@@ -32,4 +32,36 @@ body {
 
 #button:hover {
   box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+.loader-gray {
+  width: 100%;
+  max-width: 350px;
+  height: 17px;
+  border-radius: 3px;
+    
+  background-size: 500px;
+  background: linear-gradient(90deg, #4e5d73 0px, #4e5d7371 100px, #4e5d73 200px);
+  animation: shine 2s infinite linear;
+}
+
+.loader-green {
+  width: 100%;
+  max-width: 110px;
+  height: 17px;
+  border-radius: 3px;
+    
+  background-size: 500px;
+  background: linear-gradient(90deg, #52ffa8 0px, #52ffa9b0 40px, #52ffa8 80px);
+  animation: shine 6s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200px;
+  }
+
+  100% {
+    background-position: 500px;
+  }
 }
